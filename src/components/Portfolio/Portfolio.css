@@ -1,0 +1,118 @@
+#portfolio{
+    padding: 50px 0;
+}
+
+.container2 .heading{
+    text-align: center;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    overflow: hidden;
+    /* position: relative; */
+}
+
+.work img{
+    width: 120%;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#5dfe0c);
+    border-radius: 10px;
+    /* position: absolute; */
+    left: 0;
+    bottom: 0;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    text-shadow: 2px 2px 2px black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: ease;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #9dfe6d;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover{
+    position: relative;
+    transition: ease;
+}
+
+.work:hover .layer{
+    transition: ease;
+    position: absolute;
+    height: 100%;
+}
+
+.btn1{
+  display: block;
+  margin: 30px auto;
+  width: fit-content;
+  border: 1px solid #9dfe6d;
+  padding: 14px 30px;
+  border-radius: 6px; 
+  text-decoration: none;
+  color: #fff; 
+  transition: background 0.5s;
+  transition: text-shadow 0.5s;
+}
+
+.btn1:hover{
+    background: #9dfe6d;
+    text-shadow: 1px 2px 1px black;
+}
+
+
+@media screen and (max-width: 600px){
+    .layer h3{
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    .layer p{
+        font-size: 8px;
+    }
+    .layer a{
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 10px;
+        margin-top: 8px;
+    }
+}

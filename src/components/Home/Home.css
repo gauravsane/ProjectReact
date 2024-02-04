@@ -1,0 +1,221 @@
+@media only screen and (max-width: 40em) {
+    .hero-component{
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        flex: 2;
+        padding: 40px;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .left h1{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .left h4{
+        font-size: 15px;
+    }
+    .left p{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .home__content{
+        font-size: 1.5rem;
+        margin-top: 20px;
+        text-align: center;
+     }
+
+     .home__social a{
+        margin-left: 20px;
+        color: rgb(55, 55, 55);
+      }
+      
+      .home__social .linkedin:hover{
+          color: rgba(0, 0, 255, 0.689);
+      }
+      .home__social .insta:hover{
+          color: rgb(235, 114, 155);
+      }
+      .home__social .github:hover{
+          color: rgb(169, 169, 169);
+      }
+
+      .right img{
+        width: 150px;
+        height: 200px;
+      }
+}
+
+@media only screen and (min-width: 40em) {
+    .hero-component{
+        width: 100%;
+        height: 90vh;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 2;
+        padding: 40px;
+        gap: 5rem;
+    }
+
+    .home__content{
+        font-size: 1.5rem;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+     }
+
+     .home__social a{
+        margin-left: 20px;
+        color: rgb(55, 55, 55);
+      }
+      
+      .home__social .linkedin:hover{
+          color: rgba(0, 0, 255, 0.689);
+      }
+      .home__social .insta:hover{
+          color: rgb(235, 114, 155);
+      }
+      .home__social .github:hover{
+          color: rgb(169, 169, 169);
+      }
+
+      .right img{
+        width: 200px;
+        height: 300px;
+      }
+}
+
+@media only screen and (min-width: 48em) {
+    .hero-component{
+        width: 100%;
+        height: 90vh;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 2;
+        padding: 40px;
+        gap: 5rem;
+    }
+
+    .home__content{
+        font-size: 1.5rem;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+     }
+
+     .home__social a{
+        margin-left: 20px;
+        color: rgb(55, 55, 55);
+      }
+      
+      .home__social .linkedin:hover{
+          color: rgba(0, 0, 255, 0.689);
+      }
+      .home__social .insta:hover{
+          color: rgb(235, 114, 155);
+      }
+      .home__social .github:hover{
+          color: rgb(169, 169, 169);
+      }
+
+      .right img{
+        width: 200px;
+        height: 300px;
+      }
+}
+
+@media only screen and (min-width: 64em) {
+    .hero-component{
+        width: 100%;
+        height: 90vh;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 2;
+        padding: 40px;
+        gap: 5rem;
+    }
+
+    .home__content{
+        font-size: 1.5rem;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+     }
+
+     .home__social a{
+        margin-left: 20px;
+        color: rgb(55, 55, 55);
+      }
+      
+      .home__social .linkedin:hover{
+          color: rgba(0, 0, 255, 0.689);
+      }
+      .home__social .insta:hover{
+          color: rgb(235, 114, 155);
+      }
+      .home__social .github:hover{
+          color: rgb(169, 169, 169);
+      }
+
+      .right img{
+        width: 200px;
+        height: 300px;
+      }  
+}
+
+@media only screen and (min-width: 80em) {
+    .hero-component{
+        width: 100%;
+        height: 90vh;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 2;
+        padding: 40px;
+        gap: 5rem;
+    }
+    
+    .home__content{
+       font-size: 1.5rem;
+       margin-top: 10px;
+       display: grid;
+       grid-template-columns: auto auto auto;
+    }
+    .home__social a{
+      margin-left: 20px;
+      color: rgb(55, 55, 55);
+    }
+    
+    .home__social .linkedin:hover{
+        color: rgba(0, 0, 255, 0.689);
+    }
+    .home__social .insta:hover{
+        color: rgb(235, 114, 155);
+    }
+    .home__social .github:hover{
+        color: rgb(169, 169, 169);
+    }
+
+    .right img{
+        width: 300px;
+        height: 400px;
+      }  
+
+}
+
+
+

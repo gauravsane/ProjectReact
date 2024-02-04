@@ -1,25 +1,65 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import Navbar from "./components/Navbar/Navbar";
+// import PacmanLoader from "react-spinners/PacmanLoader";
+import "./App.css";
+import {
+  BrowserRouter as Router,
+  HashRouter,
+  Routes,
+  Route,
+  Link,
+  BrowserRouter,
+} from "react-router-dom";
+import Loader from "./Loader";
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Skills from "./components/Skills/Skills";
+import Qualification from "./components/Qualification/Qualification";
+import Contact from "./components/Contact/Contact";
+import Portfolio from "./components/Portfolio/Portfolio";
 
-function App() {
+const App = () => {
+  let [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1900);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {loading ? (
+        <div className="App">
+          {/* <PacmanLoader
+        color={'yellow'}
+        // loading={loading}
+        size={70}
+        aria-label="Loading Spinner"
+        data-testid="loader"
+      /> */}
+          <Loader />
+        </div>
+      ) : (
+        <div>
+          <Navbar />
+          {/* <Home />
+      <About /> */}
+            <HashRouter>
+              <Routes>
+                <Route path="/" element={<Home />}></Route>
+                <Route path="/About" element={<About />}></Route>
+                <Route path="/Skills" element={<Skills />}></Route>
+                <Route path="/Qualification" element={<Qualification />}></Route>
+                <Route path="/Portfolio" element={<Portfolio />}></Route>
+                <Route path="/Contact" element={<Contact />}></Route>
+              </Routes>
+            </HashRouter>
+        </div>
+      )}
     </div>
   );
-}
+};
 
 export default App;
