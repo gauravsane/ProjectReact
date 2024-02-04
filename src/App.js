@@ -3,8 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 // import PacmanLoader from "react-spinners/PacmanLoader";
 import "./App.css";
 import {
-  BrowserRouter as Router,
-  HashRouter,
+  HashRouter as Router,
   Routes,
   Route,
   Link,
@@ -46,7 +45,7 @@ const App = () => {
           <Navbar />
           {/* <Home />
       <About /> */}
-            <HashRouter>
+            <Router>
               <Routes>
                 <Route path="/" element={<Home />}></Route>
                 <Route path="/About" element={<About />}></Route>
@@ -55,7 +54,7 @@ const App = () => {
                 <Route path="/Portfolio" element={<Portfolio />}></Route>
                 <Route path="/Contact" element={<Contact />}></Route>
               </Routes>
-            </HashRouter>
+            </Router>
         </div>
       )}
     </div>
